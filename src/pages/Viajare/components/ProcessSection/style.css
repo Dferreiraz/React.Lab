@@ -1,0 +1,84 @@
+/* =========================================================
+   PROCESS SECTION DO VIAJARE - CSS ESCOPADO
+   ========================================================= */
+
+.viajare-app .process-section {
+  padding: 6rem 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.viajare-app .process-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.viajare-app .process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.viajare-app .process-step {
+  text-align: center;
+  position: relative;
+}
+
+/* Linha conectora entre os passos - agora perfeitamente centralizada */
+.viajare-app .process-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 40px; /* Centro exato do círculo de 80px */
+  left: calc(50% + 40px); /* Começa da borda direita do círculo */
+  width: calc(100% - 80px); /* Vai até a borda esquerda do próximo círculo */
+  height: 2px;
+  background: #e0e0e0;
+  z-index: 0;
+}
+
+.viajare-app .process-number {
+  width: 80px;
+  height: 80px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 auto 1.5rem;
+  position: relative;
+  z-index: 1; /* Garante que o círculo fique acima da linha */
+}
+
+.viajare-app .process-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-dark);
+}
+
+.viajare-app .process-description {
+  color: var(--color-text-medium);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .viajare-app .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .viajare-app .process-step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .viajare-app .process-grid {
+    grid-template-columns: 1fr;
+  }
+}

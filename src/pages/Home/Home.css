@@ -1,0 +1,103 @@
+.main-content {
+  flex: 1;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+/* Hero Section (Topo) */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0 4rem;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #f8fafc;
+  letter-spacing: -0.02em;
+}
+
+.highlight {
+  color: #8b5cf6; /* Roxo do React */
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+
+/* Badges de Tecnologia */
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.tech-badge {
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+  background: #334155;
+  border-color: #8b5cf6;
+  transform: translateY(-2px);
+}
+
+/* Seção de Projetos */
+.projects-section {
+  padding: 2rem 0 4rem;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #f8fafc;
+}
+
+/* Grid dos Cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  .section-title {
+    font-size: 1.75rem;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

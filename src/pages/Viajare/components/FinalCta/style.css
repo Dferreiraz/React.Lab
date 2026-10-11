@@ -1,0 +1,46 @@
+/* =========================================================
+   FINAL CTA DO VIAJARE - CSS ESCOPADO
+   ========================================================= */
+
+.viajare-app .cta-section {
+  padding: 8rem 2rem;
+  background: linear-gradient(rgba(26, 95, 87, 0.9), rgba(26, 95, 87, 0.9)),
+    url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&q=80') center/cover fixed;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.viajare-app .cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.viajare-app .cta-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.viajare-app .cta-text {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+}
+
+.viajare-app .cta-button {
+  background: var(--color-white);
+  color: var(--color-primary);
+  padding: 1.25rem 3rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  transition: var(--transition-smooth);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.viajare-app .cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-medium);
+}

@@ -1,0 +1,101 @@
+/* =========================================================
+   EXPERIENCE GRID DO VIAJARE - CSS ESCOPADO
+   ========================================================= */
+
+/* Variáveis CSS (garantindo que existam no escopo do container) */
+.viajare-app {
+  --color-primary: #1a5f57;
+  --color-primary-dark: #134a44;
+  --color-primary-light: #2d7a72;
+  --color-secondary: #f5f5f5;
+  --color-text-dark: #1a1a1a;
+  --color-text-medium: #4a4a4a;
+  --color-text-light: #777777;
+  --color-white: #ffffff;
+  --color-gray-light: #f9f9f9;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --transition-smooth: all 0.3s ease;
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Seção de Experiências */
+.viajare-app .experience-section {
+  padding: 6rem 2rem;
+  background: var(--color-gray-light);
+}
+
+.viajare-app .experience-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.viajare-app .experience-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.viajare-app .experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.viajare-app .experience-card {
+  background: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition-smooth);
+}
+
+.viajare-app .experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.viajare-app .experience-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.viajare-app .experience-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.viajare-app .experience-card:hover .experience-image {
+  transform: scale(1.1);
+}
+
+.viajare-app .experience-content {
+  padding: 1.5rem;
+}
+
+.viajare-app .experience-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-dark);
+}
+
+.viajare-app .experience-description {
+  color: var(--color-text-medium);
+  line-height: 1.7;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .viajare-app .experience-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .viajare-app .experience-section {
+    padding: 4rem 1.5rem;
+  }
+}
