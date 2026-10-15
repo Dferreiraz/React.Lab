@@ -1,0 +1,91 @@
+/* =========================================================
+   NEXCENT GLOBAL CSS - ESCOPADO
+   ========================================================= */
+
+.nexcent-app {
+  /* --- Variáveis Baseadas no Design System (Escopadas) --- */
+  --primary: #4CAF50;
+  --neutral-black: #263238;
+  --neutral-d-grey: #4D4D4D;
+  --neutral-grey: #717171;
+  --neutral-l-grey: #89939E;
+  --neutral-silver: #F5F7FA;
+  --white: #FFFFFF;
+  --shadow-sm: 0px 2px 4px rgba(171, 190, 209, 0.2);
+  --shadow-md: 0px 8px 16px rgba(171, 190, 209, 0.4);
+  --font-family: 'Inter', sans-serif;
+
+  /* --- Estilos Base (Substituindo o 'body') --- */
+  font-family: var(--font-family);
+  color: var(--neutral-grey);
+  background-color: var(--white);
+  line-height: 1.6;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* --- Resets Escopados --- */
+.nexcent-app * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nexcent-app h1, 
+.nexcent-app h2, 
+.nexcent-app h3, 
+.nexcent-app h4 {
+  color: var(--neutral-d-grey);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.nexcent-app a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+.nexcent-app ul {
+  list-style: none;
+}
+
+/* --- Utilitários Escopados --- */
+.nexcent-app .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nexcent-app .text-primary { color: var(--primary); }
+.nexcent-app .text-center { text-align: center; }
+.nexcent-app .bg-silver { background-color: var(--neutral-silver); }
+.nexcent-app .section-padding { padding: 80px 0; }
+.nexcent-app .shadow { box-shadow: var(--shadow-md); }
+
+/* --- Botões Escopados --- */
+.nexcent-app .btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.nexcent-app .btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.nexcent-app .btn-primary:hover {
+  background-color: #3e8e41;
+}
+
+.nexcent-app .btn-text {
+  color: var(--primary);
+  font-weight: 500;
+  padding: 14px 28px;
+}

@@ -1,0 +1,190 @@
+/* =========================================================
+   FOOTER DO NEXCENT - CSS ESCOPADO
+   ========================================================= */
+
+.nexcent-app .footer {
+  background-color: var(--neutral-black);
+  color: var(--white);
+  padding: 80px 0 40px;
+}
+
+.nexcent-app .footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.nexcent-app .footer-brand {
+  max-width: 300px;
+}
+
+.nexcent-app .footer-logo {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.nexcent-app .footer-logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.nexcent-app .footer-description {
+  color: var(--neutral-l-grey);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.nexcent-app .social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.nexcent-app .social-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  transition: background 0.3s ease;
+}
+
+.nexcent-app .social-icon:hover {
+  background: var(--primary);
+}
+
+.nexcent-app .footer-links-grid {
+  display: flex;
+  gap: 80px;
+}
+
+.nexcent-app .footer-column {
+  min-width: 150px;
+}
+
+.nexcent-app .footer-column h4 {
+  color: var(--white);
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.nexcent-app .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nexcent-app .footer-link {
+  color: var(--neutral-l-grey);
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nexcent-app .footer-link:hover {
+  color: var(--primary);
+}
+
+.nexcent-app .newsletter-form {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 8px 12px;
+  max-width: 280px;
+}
+
+.nexcent-app .newsletter-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-size: 14px;
+  padding: 8px;
+}
+
+.nexcent-app .newsletter-input::placeholder {
+  color: var(--neutral-l-grey);
+}
+
+.nexcent-app .newsletter-btn {
+  background: var(--primary);
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.nexcent-app .newsletter-btn:hover {
+  background: #3e8e41;
+}
+
+.nexcent-app .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nexcent-app .footer-bottom p {
+  color: var(--neutral-l-grey);
+  font-size: 14px;
+}
+
+.nexcent-app .footer-bottom-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nexcent-app .footer-bottom-link {
+  color: var(--neutral-l-grey);
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nexcent-app .footer-bottom-link:hover {
+  color: var(--white);
+}
+
+/* Responsivo */
+@media (max-width: 968px) {
+  .nexcent-app .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .nexcent-app .footer-links-grid {
+    gap: 40px;
+  }
+  
+  .nexcent-app .footer-column {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nexcent-app .footer-links-grid {
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .nexcent-app .newsletter-form {
+    max-width: 100%;
+  }
+  
+  .nexcent-app .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,26 @@
+.nexcent-app .navbar {
+  background-color: var(--white);
+  padding: 20px 0;
+}
+
+.nexcent-app .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nexcent-app .nav-links a {
+  margin: 0 15px;
+  color: var(--neutral-black);
+  font-weight: 500;
+}
+
+.nexcent-app .nav-links a:hover {
+  color: var(--primary);
+}
+
+.nexcent-app .nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

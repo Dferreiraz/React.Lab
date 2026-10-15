@@ -1,0 +1,42 @@
+/* =========================================================
+   COMMUNITY DO NEXCENT - CSS ESCOPADO
+   ========================================================= */
+
+.nexcent-app .community-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.nexcent-app .card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nexcent-app .card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.nexcent-app .card-icon {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.nexcent-app .card h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--neutral-black);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nexcent-app .community-cards {
+    grid-template-columns: 1fr;
+  }
+}

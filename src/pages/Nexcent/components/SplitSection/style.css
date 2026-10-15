@@ -1,0 +1,51 @@
+/* =========================================================
+   SPLIT SECTION DO NEXCENT - CSS ESCOPADO
+   ========================================================= */
+
+.nexcent-app .split-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.nexcent-app .split-container.reversed {
+  flex-direction: row-reverse;
+}
+
+.nexcent-app .split-image, 
+.nexcent-app .split-content {
+  flex: 1;
+}
+
+.nexcent-app .split-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nexcent-app .split-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--neutral-d-grey);
+}
+
+.nexcent-app .split-content p {
+  margin-bottom: 30px;
+  color: var(--neutral-grey);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nexcent-app .split-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .nexcent-app .split-container.reversed {
+    flex-direction: column;
+  }
+  
+  .nexcent-app .split-content {
+    text-align: center;
+  }
+}
