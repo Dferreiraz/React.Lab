@@ -1,0 +1,146 @@
+/* =========================================================
+   SORRISO ODONTO GLOBAL CSS - ESCOPADO
+   ========================================================= */
+
+/* 1. Importação de Fontes (Deve ficar no topo do arquivo) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap');
+
+/* 2. Variáveis e Estilos Base do Wrapper */
+.sorrisoodonto-app {
+  /* --- CORES --- */
+  --color-primary: #1D4ED8;
+  --color-primary-hover: #1E40AF;
+  --color-secondary: #0D9488;
+  --color-secondary-hover: #0F766E;
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F8FAFC;
+  --color-bg-tertiary: #F1F5F9;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-tertiary: #64748B;
+  --color-white: #FFFFFF;
+  --color-border: #E2E8F0;
+
+  /* --- TIPOGRAFIA --- */
+  --font-heading: 'Outfit', 'Montserrat', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* --- ESPAÇAMENTO --- */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+
+  /* --- BORDAS E SOMBRAS --- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-float: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+
+  /* --- TRANSIÇÕES --- */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+
+  /* --- ESTILOS DO CONTAINER PRINCIPAL --- */
+  font-family: var(--font-body);
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* 3. Reset Escopado */
+.sorrisoodonto-app *, 
+.sorrisoodonto-app *::before, 
+.sorrisoodonto-app *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.sorrisoodonto-app img, 
+.sorrisoodonto-app picture, 
+.sorrisoodonto-app video, 
+.sorrisoodonto-app canvas, 
+.sorrisoodonto-app svg {
+  display: block;
+  max-width: 100%;
+}
+
+.sorrisoodonto-app input, 
+.sorrisoodonto-app button, 
+.sorrisoodonto-app textarea, 
+.sorrisoodonto-app select {
+  font: inherit;
+}
+
+.sorrisoodonto-app p, 
+.sorrisoodonto-app h1, 
+.sorrisoodonto-app h2, 
+.sorrisoodonto-app h3, 
+.sorrisoodonto-app h4, 
+.sorrisoodonto-app h5, 
+.sorrisoodonto-app h6 {
+  overflow-wrap: break-word;
+}
+
+.sorrisoodonto-app button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sorrisoodonto-app a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sorrisoodonto-app ul, 
+.sorrisoodonto-app ol {
+  list-style: none;
+}
+
+/* 4. Tipografia Global Escopada */
+.sorrisoodonto-app h1, 
+.sorrisoodonto-app h2, 
+.sorrisoodonto-app h3, 
+.sorrisoodonto-app h4, 
+.sorrisoodonto-app h5, 
+.sorrisoodonto-app h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.sorrisoodonto-app h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; }
+.sorrisoodonto-app h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; }
+.sorrisoodonto-app h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 600; }
+.sorrisoodonto-app h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); font-weight: 600; }
+
+/* 5. Utilitários Globais Escopados */
+.sorrisoodonto-app .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .sorrisoodonto-app .container {
+    padding: 0 var(--spacing-8);
+  }
+}

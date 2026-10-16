@@ -1,0 +1,45 @@
+/* =========================================================
+   STATS BANNER DO SORRISO ODONTO - CSS ESCOPADO
+   ========================================================= */
+
+.sorrisoodonto-app .stats-banner {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-16) 0;
+}
+
+.sorrisoodonto-app .stats-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-10);
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .sorrisoodonto-app .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .sorrisoodonto-app .stats-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.sorrisoodonto-app .stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-2);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  line-height: 1;
+}
+
+.sorrisoodonto-app .stat-label {
+  font-size: 0.875rem;
+  opacity: 0.9;
+  max-width: 200px;
+  margin: 0 auto;
+  line-height: 1.4;
+}

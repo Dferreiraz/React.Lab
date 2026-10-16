@@ -1,0 +1,56 @@
+/* =========================================================
+   CARD DO CONSULTA CEP - CSS ESCOPADO
+   ========================================================= */
+
+.consultacep-app .consultacep-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.consultacep-app .consultacep-container h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.consultacep-app .consultacep-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.consultacep-app .consultacep-container input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.consultacep-app .consultacep-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #11998e;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.consultacep-app .consultacep-container button:hover {
+  background-color: #e0e0e0;
+}
+
+.consultacep-app .resultado {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.consultacep-app .resultado p {
+  margin: 8px 0;
+}

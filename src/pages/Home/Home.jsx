@@ -27,6 +27,18 @@ const projects = [
     description: 'Projeto de e-commerce desenvolvido durante o curso de Desenvolvedor Front-End no SENAI Suíço-Brasileiro, criado para praticar consumo de APIs, integração de dados e desenvolvimento de interfaces web.',
     path: '/senai-livre',
     accentColor: '#f97316'
+  },
+  {
+    title: 'Consulta de CEP',
+    description: 'Aplicação desenvolvida durante o curso de Desenvolvedor Front-End no SENAI Suíço-Brasileiro, com foco no consumo e integração de API para consulta de CEP.',
+    path: '/consulta-cep',
+    accentColor: '#0ea5e9'
+  },
+  {
+    title: 'Sorriso Odonto',
+    description: 'Projeto de portfólio desenvolvido durante o curso de IA Generativa Google Antigravity, com foco na criação de um website moderno, responsivo e intuitivo para uma clínica odontológica.',
+    path: '/sorriso-odonto',
+    accentColor: '#00b4d8'
   }
 ]
 

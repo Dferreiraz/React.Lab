@@ -1,0 +1,104 @@
+/* =========================================================
+   SPECIALTIES DO SORRISO ODONTO - CSS ESCOPADO
+   ========================================================= */
+
+.sorrisoodonto-app .section-padding {
+  padding: var(--spacing-20) 0;
+}
+
+.sorrisoodonto-app .specialties {
+  background-color: var(--color-bg-secondary);
+}
+
+.sorrisoodonto-app .specialties-intro {
+  max-width: 600px;
+  margin: 0 auto var(--spacing-12);
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+}
+
+.sorrisoodonto-app .text-center {
+  text-align: center;
+}
+
+.sorrisoodonto-app .text-secondary {
+  color: var(--color-secondary);
+}
+
+.sorrisoodonto-app .hidden-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sorrisoodonto-app .hidden-mobile {
+    display: inline;
+  }
+}
+
+.sorrisoodonto-app .specialties-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-6);
+}
+
+@media (min-width: 768px) {
+  .sorrisoodonto-app .specialties-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .sorrisoodonto-app .specialties-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sorrisoodonto-app .specialty-card {
+  height: 100%;
+}
+
+.sorrisoodonto-app .specialty-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  background-color: rgba(13, 148, 136, 0.1);
+  color: var(--color-secondary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-6);
+  transition: all var(--transition-normal);
+}
+
+.sorrisoodonto-app .specialty-card:hover .specialty-icon-wrapper {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  transform: scale(1.05);
+}
+
+.sorrisoodonto-app .specialty-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-3);
+  color: var(--color-text-primary);
+}
+
+.sorrisoodonto-app .specialty-description {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-6);
+  flex-grow: 1;
+}
+
+.sorrisoodonto-app .specialty-link {
+  color: var(--color-primary);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  cursor: pointer;
+  transition: gap var(--transition-fast);
+  margin-top: auto;
+}
+
+.sorrisoodonto-app .specialty-card:hover .specialty-link {
+  gap: var(--spacing-3);
+}
