@@ -21,6 +21,12 @@ const projects = [
     description: 'Site institucional de agência de tecnologia, desenvolvido durante o curso Desenvolvedor Front-End no SENAI suiço-brasileira.',
     path: '/agency-web',
     accentColor: '#1090CB' 
+  },
+  {
+    title: 'SenaiLivre',
+    description: 'Projeto de e-commerce desenvolvido durante o curso de Desenvolvedor Front-End no SENAI Suíço-Brasileiro, criado para praticar consumo de APIs, integração de dados e desenvolvimento de interfaces web.',
+    path: '/senai-livre',
+    accentColor: '#f97316'
   }
 ]
 

@@ -1,0 +1,91 @@
+/* =========================================================
+   MAIN DO SENAILIVRE - CSS ESCOPADO
+   ========================================================= */
+
+.senailivre-app main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 100px 20px;
+  background-color: #0e0e0e;
+  flex-wrap: wrap; 
+  text-align: center;
+}
+
+.senailivre-app main img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.senailivre-app .content-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.senailivre-app .content-main h1 {
+  font-size: 40px;
+  color: #333;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.senailivre-app .content-main h1 span {
+  color: #e30616;
+}
+
+.senailivre-app .content-main p {
+  color: #666;
+  font-size: 16px;
+}
+
+.senailivre-app .btn-primary, 
+.senailivre-app .btn-secondary {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.senailivre-app .btn-primary {
+  background-color: #e30616;
+  color: #fff;
+}
+
+.senailivre-app .btn-primary:hover {
+  background-color: #b00511;
+}
+
+.senailivre-app .btn-secondary {
+  background-color: transparent;
+  color: #e30616;
+  border: 2px solid #e30616;
+  margin-left: 10px;
+}
+
+.senailivre-app .btn-secondary:hover {
+  background-color: #e30616;
+  color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .senailivre-app main {
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+  
+  .senailivre-app .content-main {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .senailivre-app .btn-secondary {
+    margin-left: 0;
+  }
+}
