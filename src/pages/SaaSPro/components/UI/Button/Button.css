@@ -1,0 +1,79 @@
+/* =========================================================
+   BUTTON DO SAAS PRO - CSS ESCOPADO
+   ========================================================= */
+
+.saaspro-app .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.saaspro-app .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.saaspro-app .btn i {
+  font-size: 1.25rem;
+}
+
+/* Variants */
+.saaspro-app .btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.saaspro-app .btn-primary:hover:not(:disabled) {
+  background-color: #43a047;
+}
+
+.saaspro-app .btn-secondary {
+  background-color: var(--blue-600);
+  color: var(--white);
+}
+
+.saaspro-app .btn-secondary:hover:not(:disabled) {
+  background-color: #3367d6;
+}
+
+.saaspro-app .btn-ghost {
+  background-color: transparent;
+  color: var(--neutral-grey);
+}
+
+.saaspro-app .btn-ghost:hover:not(:disabled) {
+  background-color: var(--gray-100);
+  color: var(--neutral-black);
+}
+
+.saaspro-app .btn-danger {
+  background-color: #f44336;
+  color: var(--white);
+}
+
+.saaspro-app .btn-danger:hover:not(:disabled) {
+  background-color: #e53935;
+}
+
+/* Sizes */
+.saaspro-app .btn-small {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+}
+
+.saaspro-app .btn-medium {
+  padding: 12px 24px;
+  font-size: 1rem;
+}
+
+.saaspro-app .btn-large {
+  padding: 16px 32px;
+  font-size: 1.125rem;
+}

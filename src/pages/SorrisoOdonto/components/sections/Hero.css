@@ -1,0 +1,149 @@
+/* =========================================================
+   HERO DO SORRISO ODONTO - CSS ESCOPADO
+   ========================================================= */
+
+.sorrisoodonto-app .hero {
+  padding: 120px 0 var(--spacing-16);
+  background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.sorrisoodonto-app .hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-12);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .sorrisoodonto-app .hero-container {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-8);
+  }
+}
+
+.sorrisoodonto-app .hero-content {
+  max-width: 600px;
+}
+
+.sorrisoodonto-app .hero-badge {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-6);
+  padding: var(--spacing-2) var(--spacing-4);
+  background-color: rgba(29, 78, 216, 0.1);
+  border-radius: var(--radius-full);
+}
+
+.sorrisoodonto-app .hero-title {
+  margin-bottom: var(--spacing-6);
+}
+
+.sorrisoodonto-app .text-primary {
+  color: var(--color-primary);
+}
+
+.sorrisoodonto-app .hero-description {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-8);
+  color: var(--color-text-secondary);
+}
+
+.sorrisoodonto-app .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+}
+
+/* Image Wrapper & Aesthetics */
+.sorrisoodonto-app .hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.sorrisoodonto-app .hero-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+  border-radius: 40px 120px 40px 40px;
+  box-shadow: var(--shadow-float);
+  position: relative;
+  overflow: hidden;
+}
+
+.sorrisoodonto-app .hero-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(29, 78, 216, 0.2), transparent);
+}
+
+.sorrisoodonto-app .floating-card {
+  position: absolute;
+  background-color: var(--color-white);
+  padding: var(--spacing-3) var(--spacing-4);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  animation: float 6s ease-in-out infinite;
+  z-index: 10;
+}
+
+.sorrisoodonto-app .floating-card.top-left {
+  top: 10%;
+  left: -5%;
+  animation-delay: 0s;
+}
+
+.sorrisoodonto-app .floating-card.bottom-right {
+  bottom: 10%;
+  right: -5%;
+  animation-delay: 3s;
+}
+
+.sorrisoodonto-app .floating-card .icon-wrapper {
+  font-size: 1.5rem;
+  background-color: var(--color-bg-secondary);
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sorrisoodonto-app .floating-card .bold {
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.sorrisoodonto-app .floating-card .small {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+@media (max-width: 768px) {
+  .sorrisoodonto-app .floating-card {
+    display: none;
+  }
+}

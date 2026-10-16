@@ -1,0 +1,100 @@
+/* =========================================================
+   TESTIMONIAL DO NEXCENT - CSS ESCOPADO
+   ========================================================= */
+
+.nexcent-app .testimonial-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nexcent-app .testimonial-image {
+  flex: 0 0 400px;
+}
+
+.nexcent-app .testimonial-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.nexcent-app .testimonial-content {
+  flex: 1;
+}
+
+.nexcent-app .testimonial-text {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+  color: var(--neutral-grey);
+}
+
+.nexcent-app .testimonial-author h4 {
+  font-size: 20px;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.nexcent-app .testimonial-author p {
+  font-size: 14px;
+  color: var(--neutral-l-grey);
+  margin-bottom: 40px;
+}
+
+.nexcent-app .testimonial-clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nexcent-app .client-logos-small {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nexcent-app .client-logos-small img {
+  max-height: 32px;
+  object-fit: contain;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.nexcent-app .client-logos-small img:hover {
+  opacity: 1;
+}
+
+.nexcent-app .meet-all {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nexcent-app .meet-all:hover {
+  gap: 12px;
+}
+
+/* Responsivo */
+@media (max-width: 968px) {
+  .nexcent-app .testimonial-container {
+    flex-direction: column;
+  }
+  
+  .nexcent-app .testimonial-image {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .nexcent-app .testimonial-clients {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

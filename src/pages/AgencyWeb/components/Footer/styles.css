@@ -1,0 +1,93 @@
+/* =========================================================
+   FOOTER DO AGENCYWEB - CSS ESCOPADO
+   ========================================================= */
+
+.agencyweb-app footer {
+  display: flex;
+  gap: 99px;
+  justify-content: center;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.agencyweb-app .footer-informations {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  font-family: var(--font-family-primary);
+}
+
+.agencyweb-app .footer-informations p {
+  font-size: var(--font-size-caption);
+  max-width: 268px;
+  width: 100%;
+  color: #515151;
+}
+
+.agencyweb-app .footer-informations ul {
+  list-style: none;
+}
+
+.agencyweb-app .footer-informations ul li a,
+.agencyweb-app .footer-informations ul li {
+  text-decoration: none;
+  color: #515151;
+  font-size: var(--font-size-caption);
+  transition: 0.3s;
+}
+
+.agencyweb-app .footer-informations ul li a:hover {
+  color: var(--color-blue);
+}
+
+.agencyweb-app .footer-informations h2 {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-h4);
+}
+
+.agencyweb-app .footer-socials {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.agencyweb-app .social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 30px;
+  box-shadow: 0 4px 14px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.agencyweb-app .social-item:hover {
+  background-color: var(--color-blue);
+  transform: translateY(-10px);
+}
+
+.agencyweb-app .social-item img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 884px) {
+  .agencyweb-app footer {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .agencyweb-app .footer-informations {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .agencyweb-app .footer-socials {
+    justify-content: center;
+  }
+}

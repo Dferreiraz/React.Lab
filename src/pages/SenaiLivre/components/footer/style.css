@@ -1,0 +1,50 @@
+/* =========================================================
+   FOOTER DO SENAILIVRE - CSS ESCOPADO
+   ========================================================= */
+
+.senailivre-app .senailivre-footer {
+  background-color: #e30616; /* Mesma cor do Header */
+  padding: 15px 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.senailivre-app .senailivre-footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Alinha com o container dos produtos */
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.senailivre-app .senailivre-footer p,
+.senailivre-app .senailivre-footer .api-link {
+  font-size: 16px; /* Um pouco menor que o header para hierarquia */
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.senailivre-app .senailivre-footer .api-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+   ========================================= */
+@media (max-width: 768px) {
+  .senailivre-app .senailivre-footer {
+    padding: 20px;
+  }
+  
+  .senailivre-app .senailivre-footer nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}

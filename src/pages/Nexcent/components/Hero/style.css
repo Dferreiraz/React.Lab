@@ -1,0 +1,48 @@
+/* =========================================================
+   HERO DO NEXCENT - CSS ESCOPADO
+   ========================================================= */
+
+.nexcent-app .hero {
+  padding: 96px 0;
+}
+
+.nexcent-app .hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.nexcent-app .hero-content {
+  max-width: 600px;
+}
+
+.nexcent-app .hero-content h1 {
+  font-size: clamp(40px, 5vw, 64px);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.nexcent-app .hero-content p {
+  font-size: 16px;
+  margin-bottom: 32px;
+  color: var(--neutral-grey);
+}
+
+.nexcent-app .hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nexcent-app .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+  
+  .nexcent-app .hero-content {
+    max-width: 100%;
+  }
+}

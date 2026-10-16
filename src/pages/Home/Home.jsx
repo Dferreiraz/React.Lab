@@ -6,15 +6,51 @@ import './Home.css'
 const projects = [
   {
     title: 'Viajare',
-    description: 'Agência de turismo com landing page moderna.',
+    description: 'Agência de turismo com landing page moderna desenvolvido para adquirir conhecimentos sobre as tecnologias e features.',
     path: '/viajare',
     accentColor: '#06b6d4'
   },
   {
     title: 'Nexcent',
-    description: 'Landing page SaaS com design limpo.',
+    description: 'Landing page SaaS com design limpo desenvolvido durante o curso Desenvolvedor Front-End no SENAI suiço-brasileira.',
     path: '/nexcent',
     accentColor: '#8b5cf6'
+  },
+  {
+    title: 'AgencyWeb',
+    description: 'Site institucional de agência de tecnologia, desenvolvido durante o curso Desenvolvedor Front-End no SENAI suiço-brasileira.',
+    path: '/agency-web',
+    accentColor: '#1090CB' 
+  },
+  {
+    title: 'SenaiLivre',
+    description: 'Projeto de e-commerce desenvolvido durante o curso de Desenvolvedor Front-End no SENAI Suíço-Brasileiro, criado para praticar consumo de APIs, integração de dados e desenvolvimento de interfaces web.',
+    path: '/senai-livre',
+    accentColor: '#f97316'
+  },
+  {
+    title: 'Consulta de CEP',
+    description: 'Aplicação desenvolvida durante o curso de Desenvolvedor Front-End no SENAI Suíço-Brasileiro, com foco no consumo e integração de API para consulta de CEP.',
+    path: '/consulta-cep',
+    accentColor: '#0ea5e9'
+  },
+  {
+    title: 'Sorriso Odonto',
+    description: 'Projeto de portfólio desenvolvido durante o curso de IA Generativa Google Antigravity, com foco na criação de um website moderno, responsivo e intuitivo para uma clínica odontológica.',
+    path: '/sorriso-odonto',
+    accentColor: '#00b4d8'
+  },
+  {
+    title: 'SaaS Pro',
+    description: 'Projeto de aprendizado criado para explorar a construção de plataformas SaaS modernas, estruturação de dashboards, gerenciamento de layouts administrativos e componentes reutilizáveis.',
+    path: '/saas-pro',
+    accentColor: '#3b82f6'
+  },
+  {
+    title: 'TechSolutions',
+    description: 'Site institucional moderno e responsivo para serviços de assistência técnica.',
+    path: '/techsolutions',
+    accentColor: '#10b981'
   }
 ]
 

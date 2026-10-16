@@ -1,0 +1,60 @@
+.agencyweb-app .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 5%;
+  background-color: var(--color-white);
+}
+
+.agencyweb-app .main-content h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+  color: var(--color-black);
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.agencyweb-app .main-content h1 span {
+  color: var(--color-blue);
+}
+
+.agencyweb-app .main-content p {
+  font-size: var(--font-size-body);
+  color: var(--color-gray);
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+
+.agencyweb-app .container-cta {
+  display: flex;
+  gap: 20px;
+}
+
+.agencyweb-app .btn-primary, 
+.agencyweb-app .btn-secondary {
+  padding: 12px 40px;
+  border-radius: 10px;
+  font-weight: var(--font-weight-button);
+  font-family: var(--font-family-primary);
+  transition: 0.3s;
+}
+
+.agencyweb-app .btn-primary {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.agencyweb-app .btn-primary:hover {
+  background-color: #005e89;
+}
+
+.agencyweb-app .btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+}
+
+.agencyweb-app .btn-secondary:hover {
+  background-color: var(--color-blue-10);
+}

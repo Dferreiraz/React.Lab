@@ -1,0 +1,64 @@
+/* =========================================================
+   AGENCYWEB GLOBAL CSS - ESCOPADO
+   ========================================================= */
+
+.agencyweb-app * {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.agencyweb-app {
+  /* --- CORES --- */
+  --color-blue: #1090CB;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-blue-10: #1090CB1a;
+  --color-gray-2: #969696;
+  --color-gray: #5C5C5C;
+  --color-gray-3: #C4C4C4;
+
+  /* --- FONTES (SIZE) --- */
+  --font-size-h1: 35px;
+  --font-size-h2: 30px;
+  --font-size-h3: 25px;
+  --font-size-h4: 18px;
+  --font-size-body: 16px;
+  --font-size-button: 16px;
+  --font-size-caption: 14px;
+
+  /* --- FONTES (WEIGHT) --- */
+  --font-weight-h1: 600;
+  --font-weight-h2: 600;
+  --font-weight-h3: 600;
+  --font-weight-h4: 500;
+  --font-weight-body: 400;
+  --font-weight-button: 700;
+  --font-weight-caption: 400;
+
+  /* --- FONTES (FAMILY) --- */
+  --font-family-primary: "Poppins", sans-serif;
+
+  /* --- ESTILOS BASE DO CONTAINER --- */
+  font-family: var(--font-family-primary);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.agencyweb-app a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.agencyweb-app ul {
+  list-style: none;
+}
+
+.agencyweb-app div {
+  display: flex;
+  justify-content: center;
+}

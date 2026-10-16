@@ -1,0 +1,14 @@
+/* =========================================================
+   PÁGINAS PLACEHOLDER DO SAAS PRO - CSS ESCOPADO
+   ========================================================= */
+
+.saaspro-app .placeholder-page {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 60px 40px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  color: var(--neutral-grey);
+  font-size: 1.125rem;
+  font-weight: 500;
+}

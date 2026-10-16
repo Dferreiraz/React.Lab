@@ -1,0 +1,52 @@
+/* =========================================================
+   SECTION PRODUCTS DO SENAILIVRE - CSS REFINADO E ESCOPADO
+   ========================================================= */
+
+.senailivre-app .senailivre-products-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: #1A1A1A;
+  padding: 60px 20px;
+}
+
+.senailivre-app .senailivre-products-title {
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+.senailivre-app .senailivre-products-title span {
+  color: #e30613;
+}
+
+.senailivre-app .senailivre-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px; 
+}
+
+/* =========================================
+   RESPONSIVIDADE REFINADA
+   ========================================= */
+@media (max-width: 768px) {
+  .senailivre-app .senailivre-products-section {
+    padding: 40px 15px;
+    gap: 30px;
+  }
+
+  .senailivre-app .senailivre-products-title {
+    font-size: 28px;
+  }
+
+  .senailivre-app .senailivre-products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+}

@@ -1,0 +1,49 @@
+/* =========================================================
+   STATS DO NEXCENT - CSS ESCOPADO
+   ========================================================= */
+
+.nexcent-app .stats-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.nexcent-app .stats-text, 
+.nexcent-app .stats-grid {
+  flex: 1;
+}
+
+.nexcent-app .stats-text h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.nexcent-app .stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.nexcent-app .stat-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nexcent-app .stat-info h4 {
+  font-size: 28px;
+  color: var(--neutral-d-grey);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nexcent-app .stats-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .nexcent-app .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

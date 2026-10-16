@@ -1,0 +1,75 @@
+/* =========================================================
+   NEWSLETTER DO SORRISO ODONTO - CSS ESCOPADO
+   ========================================================= */
+
+.sorrisoodonto-app .newsletter {
+  background-color: var(--color-bg-tertiary);
+  padding: var(--spacing-12) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sorrisoodonto-app .newsletter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .sorrisoodonto-app .newsletter-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.sorrisoodonto-app .newsletter-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-6);
+  color: var(--color-text-primary);
+  max-width: 400px;
+}
+
+@media (min-width: 992px) {
+  .sorrisoodonto-app .newsletter-title {
+    margin-bottom: 0;
+  }
+}
+
+.sorrisoodonto-app .newsletter-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  gap: var(--spacing-4);
+}
+
+@media (min-width: 576px) {
+  .sorrisoodonto-app .newsletter-form {
+    flex-direction: row;
+  }
+}
+
+.sorrisoodonto-app .input-group {
+  flex: 1;
+}
+
+.sorrisoodonto-app .newsletter-input {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  transition: all var(--transition-fast);
+  outline: none;
+  background-color: var(--color-white);
+}
+
+.sorrisoodonto-app .newsletter-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
+}
+
+.sorrisoodonto-app .newsletter-btn {
+  flex-shrink: 0;
+}

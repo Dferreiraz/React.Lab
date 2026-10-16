@@ -1,0 +1,45 @@
+/* =========================================================
+   SECTION TITLE DO SORRISO ODONTO - CSS ESCOPADO
+   ========================================================= */
+
+.sorrisoodonto-app .section-header {
+  margin-bottom: var(--spacing-12);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.sorrisoodonto-app .section-header.text-center {
+  align-items: center;
+  text-align: center;
+}
+
+.sorrisoodonto-app .section-subtitle {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.sorrisoodonto-app .section-subtitle::before,
+.sorrisoodonto-app .section-subtitle::after {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  border-radius: 2px;
+}
+
+.sorrisoodonto-app .section-title {
+  color: var(--color-text-primary);
+  max-width: 600px;
+}
+
+.sorrisoodonto-app .title-separator {
+  display: none;
+}

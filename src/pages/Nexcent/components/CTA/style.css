@@ -1,0 +1,27 @@
+/* =========================================================
+   CTA DO NEXCENT - CSS ESCOPADO
+   ========================================================= */
+
+.nexcent-app .cta-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nexcent-app .cta-container h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin-bottom: 40px;
+  color: var(--neutral-d-grey);
+}
+
+.nexcent-app .cta-container .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+.nexcent-app .cta-container .btn-primary:hover {
+  gap: 12px;
+}

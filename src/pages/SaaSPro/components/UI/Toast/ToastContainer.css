@@ -1,0 +1,64 @@
+/* =========================================================
+   TOAST CONTAINER DO SAAS PRO - CSS ESCOPADO
+   ========================================================= */
+
+.saaspro-app .toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.saaspro-app .toast {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  animation: saaspro-slideInRight 0.3s ease;
+  min-width: 300px;
+}
+
+.saaspro-app .toast i {
+  font-size: 1.25rem;
+}
+
+.saaspro-app .toast-success {
+  background-color: var(--white);
+  border-left: 4px solid var(--primary);
+  color: var(--neutral-black);
+}
+
+.saaspro-app .toast-success i {
+  color: var(--primary);
+}
+
+.saaspro-app .toast-error {
+  background-color: var(--white);
+  border-left: 4px solid #f44336;
+  color: var(--neutral-black);
+}
+
+.saaspro-app .toast-error i {
+  color: #f44336;
+}
+
+.saaspro-app .toast-info {
+  background-color: var(--white);
+  border-left: 4px solid var(--blue-600);
+  color: var(--neutral-black);
+}
+
+.saaspro-app .toast-info i {
+  color: var(--blue-600);
+}
+
+/* Renomeei o keyframe para evitar conflito global */
+@keyframes saaspro-slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}

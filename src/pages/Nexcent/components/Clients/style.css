@@ -1,0 +1,26 @@
+/* =========================================================
+   CLIENTS DO NEXCENT - CSS ESCOPADO
+   ========================================================= */
+
+.nexcent-app .section-header {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.nexcent-app .section-header h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.nexcent-app .client-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nexcent-app .client-logos img {
+  max-height: 40px;
+  object-fit: contain;
+}

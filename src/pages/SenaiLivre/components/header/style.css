@@ -1,0 +1,25 @@
+/* =========================================================
+   HEADER DO SENAILIVRE - CSS ESCOPADO
+   ========================================================= */
+
+.senailivre-app header {
+  background-color: #e30616;
+  display: flex;
+  justify-content: end;
+  padding: 10px 35px;
+}
+
+.senailivre-app header nav a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.senailivre-app header nav a img {
+  width: 40px;
+}

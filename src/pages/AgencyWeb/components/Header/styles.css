@@ -1,0 +1,44 @@
+.agencyweb-app header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: var(--color-white);
+}
+
+.agencyweb-app .container-nav-header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.agencyweb-app .navigation-header ul {
+  display: flex;
+  gap: 30px;
+}
+
+.agencyweb-app .navigation-header a {
+  color: var(--color-black);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-body);
+  transition: 0.3s;
+}
+
+.agencyweb-app .navigation-header a:hover,
+.agencyweb-app .navigation-header .menu-active {
+  color: var(--color-blue);
+}
+
+.agencyweb-app .btn-header {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: var(--font-weight-button);
+  font-size: var(--font-size-button);
+  transition: 0.3s;
+}
+
+.agencyweb-app .btn-header:hover {
+  background-color: #005e89;
+}
