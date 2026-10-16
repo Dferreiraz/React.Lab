@@ -45,6 +45,12 @@ const projects = [
     description: 'Projeto de aprendizado criado para explorar a construção de plataformas SaaS modernas, estruturação de dashboards, gerenciamento de layouts administrativos e componentes reutilizáveis.',
     path: '/saas-pro',
     accentColor: '#3b82f6'
+  },
+  {
+    title: 'TechSolutions',
+    description: 'Site institucional moderno e responsivo para serviços de assistência técnica.',
+    path: '/techsolutions',
+    accentColor: '#10b981'
   }
 ]
 

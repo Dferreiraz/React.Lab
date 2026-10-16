@@ -7,6 +7,7 @@ import SenaiLivre from './pages/SenaiLivre/SenaiLivre.jsx'
 import ConsultaCep from './pages/ConsultaCep/ConsultaCep.jsx'
 import SorrisoOdonto from './pages/SorrisoOdonto/SorrisoOdonto.jsx'
 import SaaSPro from './pages/SaaSPro/SaaSPro.jsx' 
+import TechSolutions from './pages/TechSolutions/TechSolutions.jsx'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/consulta-cep" element={<ConsultaCep />} />
       <Route path="/sorriso-odonto" element={<SorrisoOdonto />} />
       <Route path="/saas-pro" element={<SaaSPro />} />
+      <Route path="/techsolutions" element={<TechSolutions />} />
     </Routes>
   )
 }
