@@ -6,6 +6,7 @@ import AgencyWeb from './pages/AgencyWeb/AgencyWeb.jsx'
 import SenaiLivre from './pages/SenaiLivre/SenaiLivre.jsx'
 import ConsultaCep from './pages/ConsultaCep/ConsultaCep.jsx'
 import SorrisoOdonto from './pages/SorrisoOdonto/SorrisoOdonto.jsx'
+import SaaSPro from './pages/SaaSPro/SaaSPro.jsx' 
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/senai-livre" element={<SenaiLivre />} />
       <Route path="/consulta-cep" element={<ConsultaCep />} />
       <Route path="/sorriso-odonto" element={<SorrisoOdonto />} />
+      <Route path="/saas-pro" element={<SaaSPro />} />
     </Routes>
   )
 }

@@ -1,0 +1,149 @@
+/* =========================================================
+   DASHBOARD DO SAAS PRO - CSS ESCOPADO
+   ========================================================= */
+
+.saaspro-app .dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.saaspro-app .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.saaspro-app .stat-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.saaspro-app .stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.saaspro-app .stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.saaspro-app .stat-header h3 {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--neutral-grey);
+}
+
+.saaspro-app .stat-header i {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.saaspro-app .stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--neutral-black);
+  margin-bottom: 12px;
+}
+
+.saaspro-app .stat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.saaspro-app .stat-badge i {
+  font-size: 1rem;
+}
+
+.saaspro-app .dashboard-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.saaspro-app .chart-section,
+.saaspro-app .revenue-section {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.saaspro-app .section-header {
+  margin-bottom: 20px;
+}
+
+.saaspro-app .section-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--neutral-black);
+}
+
+.saaspro-app .chart-container {
+  height: 300px;
+}
+
+.saaspro-app .revenue-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.saaspro-app .revenue-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.saaspro-app .revenue-bar-label {
+  width: 120px;
+  font-size: 0.875rem;
+  color: var(--neutral-grey);
+}
+
+.saaspro-app .revenue-bar-track {
+  flex: 1;
+  height: 8px;
+  background-color: var(--gray-100);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.saaspro-app .revenue-bar-fill {
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.saaspro-app .revenue-bar-value {
+  width: 40px;
+  text-align: right;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--neutral-black);
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .saaspro-app .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .saaspro-app .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

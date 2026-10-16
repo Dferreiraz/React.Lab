@@ -39,6 +39,12 @@ const projects = [
     description: 'Projeto de portfólio desenvolvido durante o curso de IA Generativa Google Antigravity, com foco na criação de um website moderno, responsivo e intuitivo para uma clínica odontológica.',
     path: '/sorriso-odonto',
     accentColor: '#00b4d8'
+  },
+  {
+    title: 'SaaS Pro',
+    description: 'Projeto de aprendizado criado para explorar a construção de plataformas SaaS modernas, estruturação de dashboards, gerenciamento de layouts administrativos e componentes reutilizáveis.',
+    path: '/saas-pro',
+    accentColor: '#3b82f6'
   }
 ]
 
