@@ -1,0 +1,46 @@
+/* =========================================================
+   COMPANY DO AGENCYWEB - CSS ESCOPADO
+   ========================================================= */
+
+.agencyweb-app .section-company {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 40px;
+  padding: 80px 20px;
+}
+
+.agencyweb-app .section-company h2 {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-h2);
+  font-size: var(--font-size-h3);
+  text-align: center;
+}
+
+.agencyweb-app .container-company {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.agencyweb-app .container-company img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsivo */
+@media (max-width: 884px) {
+  .agencyweb-app .container-company {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .agencyweb-app .container-company {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,50 @@
+/* =========================================================
+   SERVICES DO AGENCYWEB - CSS ESCOPADO
+   ========================================================= */
+
+.agencyweb-app .section-services {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: center;
+  gap: 25px;
+  padding: 30px 20px;
+  border-bottom: 0.7px solid var(--color-gray-3);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.agencyweb-app .container-item-services {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.agencyweb-app .container-item-services h2 {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-h4);
+  font-size: var(--font-size-h4);
+}
+
+.agencyweb-app .container-item-services p {
+  font-family: var(--font-family-primary);
+  color: var(--color-gray-2);
+  font-size: var(--font-size-caption);
+}
+
+/* Responsivo */
+@media (max-width: 884px) {
+  .agencyweb-app .section-services {
+    grid-template-columns: repeat(2, max-content);
+    gap: 50px 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .agencyweb-app .section-services {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .agencyweb-app .container-item-services {
+    justify-content: center;
+  }
+}

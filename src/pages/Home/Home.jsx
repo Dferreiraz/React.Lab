@@ -6,15 +6,21 @@ import './Home.css'
 const projects = [
   {
     title: 'Viajare',
-    description: 'Agência de turismo com landing page moderna.',
+    description: 'Agência de turismo com landing page moderna desenvolvido para adquirir conhecimentos sobre as tecnologias e features.',
     path: '/viajare',
     accentColor: '#06b6d4'
   },
   {
     title: 'Nexcent',
-    description: 'Landing page SaaS com design limpo.',
+    description: 'Landing page SaaS com design limpo desenvolvido durante o curso Desenvolvedor Front-End no SENAI suiço-brasileira.',
     path: '/nexcent',
     accentColor: '#8b5cf6'
+  },
+  {
+    title: 'AgencyWeb',
+    description: 'Site institucional de agência de tecnologia, desenvolvido durante o curso Desenvolvedor Front-End no SENAI suiço-brasileira.',
+    path: '/agency-web',
+    accentColor: '#1090CB' 
   }
 ]
 
