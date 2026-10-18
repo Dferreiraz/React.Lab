@@ -1,5 +1,5 @@
 import './styles.css';
-import logoFooter from '../../assets/images/LOGO-footer.svg';
+import logoFooter from '../../assets/images/logo-footer.svg';
 import iconFacebook from '../../assets/images/icon-facebook.svg';
 import iconInstagram from '../../assets/images/icon-instagram.svg';
 import iconTwitter from '../../assets/images/icon-twitter.svg';
