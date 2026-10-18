@@ -24,7 +24,7 @@ const experiences = [
     id: 4,
     title: 'Cultura',
     description: 'Descubra histórias, museus, gastronomia local e tradições únicas ao redor do mundo.',
-    image: 'https://images.unsplash.com/photo-1499856871958-5b9627545c1a?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=600&q=80',
     type: 'cultura'
   },
   {

@@ -18,14 +18,14 @@ const destinations = [
     name: 'Lisboa',
     country: 'Portugal',
     description: 'Encantos mediterrâneos, história vibrante e uma culinária inesquecível.',
-    image: 'https://images.unsplash.com/photo-1555881400-74d7acaacd81?w=800&q=80'
+    image: 'https://images.pexels.com/photos/26288655/pexels-photo-26288655.jpeg'
   },
   {
     id: 4,
     name: 'Lençóis Maranhenses',
     country: 'Brasil',
     description: 'Uma paisagem surreal de dunas brancas e lagoas cristalinas, um verdadeiro oásis intocado.',
-    image: 'https://images.unsplash.com/photo-1531366936337-7c119a87718e?w=800&q=80'
+    image: 'https://images.pexels.com/photos/37895055/pexels-photo-37895055.jpeg'
   }
 ]
 

@@ -1,13 +1,23 @@
 import './style.css';
+
+
 import TimSmith from '../../assets/images/tim-smith.svg';
 
+
+import logoCliente1 from '../../assets/images/Logo-Cliente.svg';
+import logoCliente2 from '../../assets/images/Logo-Cliente2.svg';
+import logoCliente3 from '../../assets/images/Logo-Cliente3.svg';
+import logoCliente4 from '../../assets/images/Logo-Cliente4.svg';
+import logoCliente5 from '../../assets/images/Logo-Cliente5.svg';
+import logoCliente6 from '../../assets/images/Logo-Cliente6.svg';
+
 const clientLogos = [
-  'Logo-Cliente.svg',
-  'Logo-Cliente2.svg',
-  'Logo-Cliente3.svg',
-  'Logo-Cliente4.svg',
-  'Logo-Cliente5.svg',
-  'Logo-Cliente6.svg'
+  logoCliente1,
+  logoCliente2,
+  logoCliente3,
+  logoCliente4,
+  logoCliente5,
+  logoCliente6
 ];
 
 export const Testimonial = () => {
@@ -33,7 +43,7 @@ export const Testimonial = () => {
               {clientLogos.map((logo, index) => (
                 <img
                   key={index}
-                  src={`/src/assets/images/${logo}`}
+                  src={logo}
                   alt={`Client ${index + 1}`}
                 />
               ))}

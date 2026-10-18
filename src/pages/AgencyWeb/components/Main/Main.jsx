@@ -16,7 +16,7 @@ export function Main() {
       </div>
 
       <div>
-        <img src={illustrationMain}
+        <img src={illustrationMain} className='imgMain'
           alt="ilustração 3d de um homem barbudo sentado em uma cadeira mexendo no notebook" />
       </div>
     </main>
