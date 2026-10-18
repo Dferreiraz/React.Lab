@@ -1,10 +1,15 @@
 import './style.css';
 
+import membersIcon from '../../assets/images/members.svg';
+import clubsIcon from '../../assets/images/clubs.svg';
+import eventbookingsIcon from '../../assets/images/eventbookings.svg';
+import paymentsIcon from '../../assets/images/payments.svg';
+
 const statsData = [
-  { icon: 'members.svg', value: '2,245,341', label: 'Members' },
-  { icon: 'clubs.svg', value: '46,328', label: 'Clubs' },
-  { icon: 'eventbookings.svg', value: '828,867', label: 'Event Bookings' },
-  { icon: 'payments.svg', value: '1,926,436', label: 'Payments' }
+  { icon: membersIcon, value: '2,245,341', label: 'Members' },
+  { icon: clubsIcon, value: '46,328', label: 'Clubs' },
+  { icon: eventbookingsIcon, value: '828,867', label: 'Event Bookings' },
+  { icon: paymentsIcon, value: '1,926,436', label: 'Payments' }
 ];
 
 export const Stats = () => {
@@ -18,7 +23,7 @@ export const Stats = () => {
         <div className="stats-grid">
           {statsData.map((stat, index) => (
             <div key={index} className="stat-item">
-              <img src={`/src/assets/images/${stat.icon}`} alt={stat.label} />
+              <img src={stat.icon} alt={stat.label} />
               <div className="stat-info">
                 <h4>{stat.value}</h4>
                 <p>{stat.label}</p>

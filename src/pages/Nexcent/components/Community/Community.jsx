@@ -1,18 +1,22 @@
 import './style.css';
 
+import icon1 from '../../assets/images/Icon.svg';
+import icon2 from '../../assets/images/Icon(1).svg';
+import icon3 from '../../assets/images/Icon(2).svg';
+
 const communityData = [
   {
-    icon: 'Icon.svg',
+    icon: icon1, 
     title: 'Membership Organisations',
     desc: 'Our membership management software provides full automation of membership renewals and payments'
   },
   {
-    icon: 'Icon(1).svg',
+    icon: icon2,
     title: 'National Associations',
     desc: 'Our membership management software provides full automation of membership renewals and payments'
   },
   {
-    icon: 'Icon(2).svg',
+    icon: icon3,
     title: 'Clubs And Groups',
     desc: 'Our membership management software provides full automation of membership renewals and payments'
   }
@@ -30,7 +34,7 @@ export const Community = () => {
           {communityData.map((item, index) => (
             <div key={index} className="card">
               <div className="card-icon">
-                <img src={`/src/assets/images/${item.icon}`} alt="Icon" />
+                <img src={item.icon} alt={`Ícone de ${item.title}`} />
               </div>
               <h3>{item.title}</h3>
               <p>{item.desc}</p>

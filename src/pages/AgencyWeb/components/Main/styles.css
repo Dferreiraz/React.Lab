@@ -58,3 +58,10 @@
 .agencyweb-app .btn-secondary:hover {
   background-color: var(--color-blue-10);
 }
+
+.agencyweb-app .imgMain {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
